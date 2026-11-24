@@ -1,0 +1,10 @@
+services:
+  investiq:
+    build: .
+    image: investiq-advisor:3.22
+    ports:
+      - "8000:8000"
+    env_file: .env                      # LLM_API_KEY, EMBED_API_KEY, RUN_BY (copy .env.example to .env)
+    volumes:
+      - ./project:/project              # data/ (10-K PDFs), chat-model/vm04-ca.crt, VM02_Embeddings_Access/vm02-ca.crt, outputs/
+    restart: unless-stopped

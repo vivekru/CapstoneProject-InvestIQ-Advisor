@@ -1,0 +1,241 @@
+id,type,strategy,grade,retrieval_hit,breakage,claims,api_calls,tokens,seconds
+Q01,single fact,zero_shot,correct,True,ok,1,1,1658,2.9
+Q01,single fact,few_shot,correct,True,ok,1,1,1943,2.4
+Q01,single fact,chain_of_thought,correct,True,ok,1,1,1770,3.7
+Q01,single fact,decomposition,correct,True,ok,1,2,2107,3.9
+Q02,single fact,zero_shot,correct,True,ok,2,1,1507,3.5
+Q02,single fact,few_shot,correct,True,ok,2,1,1815,3.4
+Q02,single fact,chain_of_thought,correct,True,ok,2,1,1624,4.4
+Q02,single fact,decomposition,correct,True,ok,4,2,1717,7.3
+Q03,single fact,zero_shot,wrong,True,ok,4,1,1433,5.5
+Q03,single fact,few_shot,correct,True,ok,4,1,1799,6.5
+Q03,single fact,chain_of_thought,wrong,True,1 of 5 citations failed,4,1,1609,7.5
+Q03,single fact,decomposition,wrong,True,ok,4,2,1594,6.2
+Q04,single fact,zero_shot,partial,False,ok,4,1,1681,6.1
+Q04,single fact,few_shot,wrong,False,ok,4,1,1987,6.0
+Q04,single fact,chain_of_thought,partial,False,ok,2,1,1668,4.2
+Q04,single fact,decomposition,partial,False,ok,4,2,2098,8.1
+Q05,"two years, one report",zero_shot,partial,True,ok,4,1,1857,9.1
+Q05,"two years, one report",few_shot,correct,True,ok,1,1,1911,3.5
+Q05,"two years, one report",chain_of_thought,correct,True,ok,4,1,1935,8.7
+Q05,"two years, one report",decomposition,partial,True,ok,4,2,3202,13.6
+Q06,multi-hop: across years,zero_shot,wrong,True,ok,1,1,1633,2.8
+Q06,multi-hop: across years,few_shot,wrong,True,ok,2,1,2008,3.8
+Q06,multi-hop: across years,chain_of_thought,wrong,True,1 of 2 citations failed,1,1,1835,5.1
+Q06,multi-hop: across years,decomposition,wrong,True,abstained,0,2,2147,2.8
+Q07,multi-hop: across years,zero_shot,partial,False,ok,2,1,1580,2.9
+Q07,multi-hop: across years,few_shot,partial,False,ok,2,1,1912,3.4
+Q07,multi-hop: across years,chain_of_thought,partial,False,ok,2,1,1712,4.2
+Q07,multi-hop: across years,decomposition,partial,True,ok,4,2,2887,8.5
+Q08,multi-hop: across companies,zero_shot,wrong,False,abstained,0,1,1214,0.8
+Q08,multi-hop: across companies,few_shot,wrong,False,abstained,0,1,1524,0.8
+Q08,multi-hop: across companies,chain_of_thought,wrong,False,abstained,0,1,1321,1.5
+Q08,multi-hop: across companies,decomposition,partial,True,ok,2,2,2536,5.2
+Q09,table figure,zero_shot,partial,True,ok,4,1,2020,7.7
+Q09,table figure,few_shot,correct,True,ok,4,1,2343,8.0
+Q09,table figure,chain_of_thought,partial,True,1 of 2 citations failed,1,1,1979,5.1
+Q09,table figure,decomposition,partial,True,ok,4,2,3385,8.8
+Q10,multi-hop: across years,zero_shot,partial,True,ok,2,1,1688,4.0
+Q10,multi-hop: across years,few_shot,partial,True,ok,2,1,2013,3.9
+Q10,multi-hop: across years,chain_of_thought,wrong,True,abstained,0,1,1752,3.3
+Q10,multi-hop: across years,decomposition,partial,True,ok,2,2,2254,5.9
+Q11,should abstain,zero_shot,correct,,abstained,0,1,2045,0.8
+Q11,should abstain,few_shot,correct,,abstained,0,1,2355,0.8
+Q11,should abstain,chain_of_thought,correct,,abstained,0,1,2151,1.5
+Q11,should abstain,decomposition,correct,,abstained,0,2,2346,1.6
+Q12,multi-hop: across companies and years,zero_shot,wrong,False,abstained,0,1,1483,0.8
+Q12,multi-hop: across companies and years,few_shot,wrong,False,abstained,0,1,1793,0.8
+Q12,multi-hop: across companies and years,chain_of_thought,wrong,False,abstained,0,1,1631,2.4
+Q12,multi-hop: across companies and years,decomposition,wrong,True,ok,4,2,2402,43.9
+Q13,quant: calculation,zero_shot,wrong,False,ok,4,1,1932,7.3
+Q13,quant: calculation,few_shot,wrong,False,ok,1,1,2033,2.8
+Q13,quant: calculation,chain_of_thought,wrong,False,ok,1,1,1843,3.3
+Q13,quant: calculation,decomposition,wrong,True,1 of 2 citations failed,1,2,2867,6.1
+Q14,quant: calculation,zero_shot,correct,True,ok,4,1,1636,6.6
+Q14,quant: calculation,few_shot,partial,True,ok,2,1,1872,5.5
+Q14,quant: calculation,chain_of_thought,partial,True,ok,2,1,1680,6.4
+Q14,quant: calculation,decomposition,correct,True,ok,4,2,1999,21.7
+Q15,multi-hop: across years,zero_shot,partial,True,ok,2,1,1995,4.0
+Q15,multi-hop: across years,few_shot,wrong,True,ok,2,1,2287,3.6
+Q15,multi-hop: across years,chain_of_thought,partial,True,ok,1,1,2029,3.1
+Q15,multi-hop: across years,decomposition,partial,True,ok,4,2,3116,8.2
+Q16,"multi-hop: two facts, one report",zero_shot,correct,True,ok,2,1,1603,3.4
+Q16,"multi-hop: two facts, one report",few_shot,correct,True,ok,2,1,1921,3.1
+Q16,"multi-hop: two facts, one report",chain_of_thought,correct,True,ok,2,1,1725,4.0
+Q16,"multi-hop: two facts, one report",decomposition,correct,True,ok,2,2,2809,5.3
+Q17,multi-hop: across years,zero_shot,wrong,True,ok,4,1,1618,7.0
+Q17,multi-hop: across years,few_shot,partial,True,ok,2,1,1794,4.5
+Q17,multi-hop: across years,chain_of_thought,partial,True,ok,1,1,1541,3.6
+Q17,multi-hop: across years,decomposition,wrong,True,ok,4,2,2912,10.1
+Q18,quant: table figure,zero_shot,correct,True,ok,1,1,2189,3.0
+Q18,quant: table figure,few_shot,correct,True,ok,1,1,2492,2.5
+Q18,quant: table figure,chain_of_thought,correct,True,ok,1,1,2322,3.9
+Q18,quant: table figure,decomposition,correct,True,ok,4,2,3408,9.4
+Q19,should abstain: forecast,zero_shot,correct,,abstained,0,1,1656,1.3
+Q19,should abstain: forecast,few_shot,correct,,abstained,0,1,1966,0.8
+Q19,should abstain: forecast,chain_of_thought,correct,,abstained,0,1,1771,1.7
+Q19,should abstain: forecast,decomposition,correct,,abstained,0,2,1919,1.7
+Q20,should abstain: advice,zero_shot,correct,,abstained,0,1,1909,15.0
+Q20,should abstain: advice,few_shot,correct,,abstained,0,1,2219,1.3
+Q20,should abstain: advice,chain_of_thought,correct,,abstained,0,1,2035,1.9
+Q20,should abstain: advice,decomposition,wrong,,ok,4,2,3061,9.3
+Q21,single fact,zero_shot,correct,True,ok,2,1,1659,4.9
+Q21,single fact,few_shot,correct,True,ok,2,1,1992,5.0
+Q21,single fact,chain_of_thought,partial,True,ok,2,1,1822,6.8
+Q21,single fact,decomposition,correct,True,ok,2,2,2238,6.5
+Q22,single fact,zero_shot,correct,True,ok,2,1,1618,3.4
+Q22,single fact,few_shot,correct,True,ok,2,1,1932,3.5
+Q22,single fact,chain_of_thought,partial,True,ok,1,1,1673,2.9
+Q22,single fact,decomposition,correct,True,ok,2,2,1766,4.4
+Q23,"two years, one report",zero_shot,correct,True,ok,2,1,1865,3.5
+Q23,"two years, one report",few_shot,correct,True,ok,2,1,2229,4.7
+Q23,"two years, one report",chain_of_thought,correct,True,ok,2,1,1970,4.1
+Q23,"two years, one report",decomposition,correct,True,ok,2,2,2517,5.4
+Q24,single fact,zero_shot,partial,True,ok,4,1,1870,4.6
+Q24,single fact,few_shot,correct,True,ok,4,1,2208,5.3
+Q24,single fact,chain_of_thought,partial,True,ok,1,1,1840,2.7
+Q24,single fact,decomposition,partial,True,ok,2,2,1636,3.2
+Q25,single fact,zero_shot,partial,True,ok,4,1,1543,5.9
+Q25,single fact,few_shot,partial,True,ok,4,1,1864,6.6
+Q25,single fact,chain_of_thought,correct,True,1 of 4 citations failed,3,1,1682,7.8
+Q25,single fact,decomposition,correct,True,1 of 4 citations failed,3,2,1838,7.7
+Q26,single fact,zero_shot,partial,True,ok,1,1,1534,2.5
+Q26,single fact,few_shot,partial,True,ok,1,1,1844,2.0
+Q26,single fact,chain_of_thought,partial,True,ok,1,1,1666,3.3
+Q26,single fact,decomposition,partial,True,ok,1,2,1854,2.9
+Q27,single fact,zero_shot,correct,True,ok,1,1,1877,2.3
+Q27,single fact,few_shot,correct,True,ok,4,1,2384,6.7
+Q27,single fact,chain_of_thought,wrong,True,ok,1,1,1977,3.3
+Q27,single fact,decomposition,wrong,True,1 of 2 citations failed,1,2,1621,4.4
+Q28,single fact,zero_shot,correct,True,ok,2,1,1652,3.6
+Q28,single fact,few_shot,correct,True,ok,2,1,1962,3.7
+Q28,single fact,chain_of_thought,correct,True,ok,1,1,1705,3.1
+Q28,single fact,decomposition,correct,True,ok,2,2,1955,4.6
+Q29,single fact,zero_shot,wrong,True,ok,2,1,1725,3.4
+Q29,single fact,few_shot,wrong,True,ok,2,1,2035,3.4
+Q29,single fact,chain_of_thought,wrong,True,ok,2,1,1860,4.7
+Q29,single fact,decomposition,correct,True,ok,1,2,1808,3.2
+Q30,single fact,zero_shot,wrong,True,ok,4,1,1974,6.6
+Q30,single fact,few_shot,partial,True,ok,4,1,2289,7.1
+Q30,single fact,chain_of_thought,partial,True,ok,1,1,1889,3.5
+Q30,single fact,decomposition,partial,True,ok,4,2,1961,7.8
+Q31,single fact,zero_shot,wrong,False,ok,1,1,1614,2.6
+Q31,single fact,few_shot,partial,False,ok,4,1,2108,6.2
+Q31,single fact,chain_of_thought,wrong,False,ok,1,1,1720,3.3
+Q31,single fact,decomposition,partial,True,ok,1,2,2077,2.8
+Q32,single fact,zero_shot,wrong,False,ok,1,1,1982,3.5
+Q32,single fact,few_shot,partial,False,ok,2,1,2299,3.7
+Q32,single fact,chain_of_thought,partial,False,ok,1,1,2028,2.9
+Q32,single fact,decomposition,partial,True,ok,2,2,2029,4.4
+Q33,table figure,zero_shot,correct,True,ok,2,1,1768,3.7
+Q33,table figure,few_shot,correct,True,ok,2,1,2115,4.6
+Q33,table figure,chain_of_thought,correct,True,ok,2,1,1881,4.6
+Q33,table figure,decomposition,correct,True,ok,2,2,2529,6.0
+Q34,table figure,zero_shot,partial,True,ok,1,1,1875,2.1
+Q34,table figure,few_shot,correct,True,ok,1,1,2252,3.6
+Q34,table figure,chain_of_thought,wrong,True,all citations failed the quote check,0,1,2052,4.3
+Q34,table figure,decomposition,partial,True,ok,1,2,2012,4.7
+Q35,table figure,zero_shot,correct,True,ok,4,1,1888,7.7
+Q35,table figure,few_shot,correct,True,ok,2,1,2012,4.1
+Q35,table figure,chain_of_thought,partial,True,ok,1,1,1764,3.3
+Q35,table figure,decomposition,partial,True,ok,1,2,1721,3.6
+Q36,table figure,zero_shot,partial,True,ok,1,1,1687,2.3
+Q36,table figure,few_shot,correct,True,ok,2,1,2056,3.6
+Q36,table figure,chain_of_thought,partial,True,ok,1,1,1797,3.1
+Q36,table figure,decomposition,partial,True,ok,1,2,2757,3.0
+Q37,table figure,zero_shot,partial,True,ok,3,1,2081,5.1
+Q37,table figure,few_shot,partial,True,ok,2,1,2318,3.9
+Q37,table figure,chain_of_thought,partial,True,ok,1,1,2053,2.8
+Q37,table figure,decomposition,wrong,True,ok,4,2,2213,5.3
+Q38,table figure,zero_shot,correct,True,ok,1,1,2015,2.2
+Q38,table figure,few_shot,correct,True,ok,2,1,2387,3.6
+Q38,table figure,chain_of_thought,correct,True,ok,1,1,2123,2.9
+Q38,table figure,decomposition,correct,True,ok,2,2,2177,4.4
+Q39,multi-hop: across years,zero_shot,partial,True,ok,4,1,1750,5.7
+Q39,multi-hop: across years,few_shot,correct,True,ok,2,1,1971,4.2
+Q39,multi-hop: across years,chain_of_thought,correct,True,ok,3,1,1947,8.4
+Q39,multi-hop: across years,decomposition,wrong,True,ok,4,2,2471,7.2
+Q40,multi-hop: across years,zero_shot,wrong,True,ok,2,1,1594,2.4
+Q40,multi-hop: across years,few_shot,wrong,True,ok,2,1,1938,2.7
+Q40,multi-hop: across years,chain_of_thought,wrong,True,ok,2,1,1784,4.4
+Q40,multi-hop: across years,decomposition,partial,True,ok,2,2,2789,4.7
+Q41,multi-hop: across years,zero_shot,partial,True,ok,2,1,1799,3.5
+Q41,multi-hop: across years,few_shot,correct,True,ok,2,1,2124,3.9
+Q41,multi-hop: across years,chain_of_thought,correct,True,ok,1,1,1875,3.5
+Q41,multi-hop: across years,decomposition,wrong,True,1 of 2 citations failed,1,2,2923,6.3
+Q42,multi-hop: across years,zero_shot,wrong,True,ok,2,1,1554,3.3
+Q42,multi-hop: across years,few_shot,partial,True,ok,3,1,1921,4.6
+Q42,multi-hop: across years,chain_of_thought,wrong,True,ok,2,1,1694,4.7
+Q42,multi-hop: across years,decomposition,wrong,True,ok,2,2,2750,6.0
+Q43,multi-hop: across years,zero_shot,partial,True,ok,4,1,1594,3.9
+Q43,multi-hop: across years,few_shot,partial,True,ok,4,1,1982,5.6
+Q43,multi-hop: across years,chain_of_thought,wrong,True,ok,2,1,1678,4.5
+Q43,multi-hop: across years,decomposition,wrong,True,ok,2,2,2732,5.5
+Q44,multi-hop: across years,zero_shot,correct,True,ok,1,1,1788,2.3
+Q44,multi-hop: across years,few_shot,correct,True,ok,2,1,2172,3.9
+Q44,multi-hop: across years,chain_of_thought,correct,True,ok,1,1,1923,3.6
+Q44,multi-hop: across years,decomposition,partial,True,ok,2,2,3212,5.6
+Q45,multi-hop: across companies,zero_shot,wrong,True,ok,2,1,1413,4.7
+Q45,multi-hop: across companies,few_shot,wrong,True,abstained,0,1,1541,0.8
+Q45,multi-hop: across companies,chain_of_thought,wrong,True,abstained,0,1,1405,2.9
+Q45,multi-hop: across companies,decomposition,wrong,True,ok,4,2,3278,8.4
+Q46,multi-hop: across companies,zero_shot,partial,True,ok,4,1,1910,6.4
+Q46,multi-hop: across companies,few_shot,wrong,True,ok,4,1,2220,6.4
+Q46,multi-hop: across companies,chain_of_thought,wrong,True,abstained,0,1,1788,2.1
+Q46,multi-hop: across companies,decomposition,correct,True,ok,2,2,2762,4.8
+Q47,multi-hop: across companies,zero_shot,wrong,True,1 of 2 citations failed,1,1,2136,3.7
+Q47,multi-hop: across companies,few_shot,wrong,True,1 of 2 citations failed,1,1,2441,3.6
+Q47,multi-hop: across companies,chain_of_thought,wrong,True,abstained,0,1,2135,2.0
+Q47,multi-hop: across companies,decomposition,partial,True,1 of 4 citations failed,3,2,3142,7.8
+Q48,multi-hop: across companies,zero_shot,wrong,True,ok,4,1,1714,7.3
+Q48,multi-hop: across companies,few_shot,wrong,True,ok,4,1,2006,6.9
+Q48,multi-hop: across companies,chain_of_thought,wrong,True,ok,1,1,1641,4.0
+Q48,multi-hop: across companies,decomposition,correct,True,ok,2,2,2528,6.1
+Q49,multi-hop: across companies,zero_shot,wrong,True,1 of 4 citations failed,3,1,1811,5.5
+Q49,multi-hop: across companies,few_shot,wrong,True,ok,1,1,1964,2.6
+Q49,multi-hop: across companies,chain_of_thought,wrong,True,1 of 4 citations failed,3,1,1928,6.4
+Q49,multi-hop: across companies,decomposition,correct,False,ok,4,2,3686,8.4
+Q50,quant: calculation,zero_shot,wrong,False,1 of 3 citations failed,2,1,2150,5.0
+Q50,quant: calculation,few_shot,wrong,False,ok,1,1,2354,2.2
+Q50,quant: calculation,chain_of_thought,wrong,False,ok,1,1,2141,2.7
+Q50,quant: calculation,decomposition,wrong,True,ok,4,2,2218,5.5
+Q51,quant: calculation,zero_shot,partial,True,ok,4,1,2056,6.5
+Q51,quant: calculation,few_shot,correct,True,1 of 4 citations failed,3,1,2390,7.5
+Q51,quant: calculation,chain_of_thought,partial,True,ok,4,1,2218,8.9
+Q51,quant: calculation,decomposition,correct,True,ok,4,2,2514,8.4
+Q52,quant: calculation,zero_shot,correct,False,ok,4,1,2368,11.4
+Q52,quant: calculation,few_shot,correct,False,ok,1,1,2285,2.8
+Q52,quant: calculation,chain_of_thought,wrong,False,ok,2,1,2156,4.6
+Q52,quant: calculation,decomposition,wrong,True,ok,4,2,3001,8.4
+Q53,quant: calculation,zero_shot,wrong,True,ok,2,1,1764,3.9
+Q53,quant: calculation,few_shot,wrong,True,ok,4,1,2190,6.1
+Q53,quant: calculation,chain_of_thought,wrong,True,1 of 2 citations failed,1,1,1872,4.7
+Q53,quant: calculation,decomposition,wrong,True,1 of 4 citations failed,3,2,2268,7.8
+Q54,quant: calculation,zero_shot,correct,True,ok,1,1,1610,2.4
+Q54,quant: calculation,few_shot,correct,True,ok,1,1,1920,2.0
+Q54,quant: calculation,chain_of_thought,correct,True,ok,1,1,1724,2.8
+Q54,quant: calculation,decomposition,wrong,True,1 of 4 citations failed,3,2,3045,9.1
+Q55,quant: calculation,zero_shot,partial,True,1 of 2 citations failed,1,1,1912,4.8
+Q55,quant: calculation,few_shot,wrong,True,ok,2,1,2207,4.1
+Q55,quant: calculation,chain_of_thought,partial,True,ok,4,1,2115,7.2
+Q55,quant: calculation,decomposition,wrong,True,ok,2,2,2925,5.3
+Q56,should abstain,zero_shot,wrong,,ok,4,1,2054,6.0
+Q56,should abstain,few_shot,wrong,,ok,2,1,2253,4.1
+Q56,should abstain,chain_of_thought,wrong,,ok,1,1,1992,3.0
+Q56,should abstain,decomposition,correct,,abstained,0,2,2012,1.6
+Q57,should abstain: forecast,zero_shot,correct,,abstained,0,1,1659,0.8
+Q57,should abstain: forecast,few_shot,correct,,abstained,0,1,1969,0.8
+Q57,should abstain: forecast,chain_of_thought,correct,,abstained,0,1,1782,1.8
+Q57,should abstain: forecast,decomposition,correct,,abstained,0,2,2005,1.8
+Q58,should abstain: advice,zero_shot,correct,,abstained,0,1,1120,0.8
+Q58,should abstain: advice,few_shot,correct,,abstained,0,1,1430,0.8
+Q58,should abstain: advice,chain_of_thought,correct,,abstained,0,1,1224,1.4
+Q58,should abstain: advice,decomposition,correct,,abstained,0,2,2101,2.5
+Q59,should abstain: not in reports,zero_shot,wrong,,ok,4,1,2231,5.6
+Q59,should abstain: not in reports,few_shot,wrong,,ok,1,1,2381,2.6
+Q59,should abstain: not in reports,chain_of_thought,correct,,abstained,0,1,2174,2.7
+Q59,should abstain: not in reports,decomposition,wrong,,ok,4,2,2153,6.9
+Q60,should abstain: personal data,zero_shot,correct,,abstained,0,1,1324,1.2
+Q60,should abstain: personal data,few_shot,correct,,abstained,0,1,1634,0.8
+Q60,should abstain: personal data,chain_of_thought,correct,,abstained,0,1,1443,1.7
+Q60,should abstain: personal data,decomposition,correct,,abstained,0,2,1471,1.5

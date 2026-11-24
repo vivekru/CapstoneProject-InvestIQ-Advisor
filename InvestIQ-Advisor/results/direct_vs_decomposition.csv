@@ -1,0 +1,29 @@
+id,type,direct_grade,agents_grade,direct_hit,agents_hit,direct_s,agents_s,direct_tokens,agents_tokens
+Q06,multi-hop: across years,wrong,correct,True,True,45.2,61.3,8747,7580
+Q07,multi-hop: across years,partial,partial,False,True,4.6,67.4,2283,15540
+Q08,multi-hop: across companies,wrong,correct,False,True,13.3,66.0,5205,6743
+Q10,multi-hop: across years,partial,correct,True,True,32.8,37.3,7619,4750
+Q12,multi-hop: across companies and years,wrong,correct,False,True,13.1,18.1,6864,8804
+Q13,quant: calculation,wrong,correct,False,True,32.8,69.6,8633,7545
+Q14,quant: calculation,correct,correct,True,True,8.2,24.7,2824,4015
+Q15,multi-hop: across years,partial,partial,True,True,5.9,52.9,2831,8410
+Q16,"multi-hop: two facts, one report",correct,partial,True,True,4.5,49.0,2243,10905
+Q17,multi-hop: across years,partial,correct,True,True,43.6,52.1,10061,5565
+Q18,quant: table figure,correct,correct,True,True,37.0,70.3,10351,9786
+Q39,multi-hop: across years,partial,partial,True,True,13.1,86.1,5314,10185
+Q40,multi-hop: across years,partial,wrong,True,True,37.8,76.7,7736,12148
+Q41,multi-hop: across years,partial,partial,True,True,18.5,84.1,7877,14014
+Q42,multi-hop: across years,partial,correct,True,True,27.8,75.0,5947,12712
+Q43,multi-hop: across years,wrong,partial,True,True,48.6,50.7,8967,9304
+Q44,multi-hop: across years,correct,partial,True,True,36.0,55.8,8380,12545
+Q45,multi-hop: across companies,correct,correct,True,True,37.8,43.7,9699,11270
+Q46,multi-hop: across companies,wrong,correct,True,True,47.5,14.2,9497,5187
+Q47,multi-hop: across companies,wrong,partial,True,True,35.7,21.7,10214,5382
+Q48,multi-hop: across companies,wrong,correct,True,True,22.2,68.4,7840,10399
+Q49,multi-hop: across companies,wrong,correct,True,True,7.0,128.9,2881,15336
+Q50,quant: calculation,wrong,wrong,False,False,23.2,21.7,10597,4213
+Q51,quant: calculation,partial,correct,True,True,32.0,22.5,7272,8827
+Q52,quant: calculation,wrong,partial,False,True,59.1,68.4,11528,11306
+Q53,quant: calculation,wrong,correct,True,True,15.5,20.1,7848,4232
+Q54,quant: calculation,correct,correct,True,True,3.6,53.3,2075,7379
+Q55,quant: calculation,partial,wrong,True,True,5.5,78.7,2542,17262

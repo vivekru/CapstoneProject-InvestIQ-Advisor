@@ -1,0 +1,209 @@
+id,type,method,recall@1,hit@1,recall@3,hit@3,recall@5,hit@5,recall@8,hit@8
+Q01,single fact,dense,0.0,0,1.0,1,1.0,1,1.0,1
+Q01,single fact,bm25,0.0,0,0.0,0,0.0,0,0.0,0
+Q01,single fact,hybrid,0.0,0,0.0,0,1.0,1,1.0,1
+Q01,single fact,rerank,1.0,1,1.0,1,1.0,1,1.0,1
+Q02,single fact,dense,1.0,1,1.0,1,1.0,1,1.0,1
+Q02,single fact,bm25,0.0,0,1.0,1,1.0,1,1.0,1
+Q02,single fact,hybrid,1.0,1,1.0,1,1.0,1,1.0,1
+Q02,single fact,rerank,1.0,1,1.0,1,1.0,1,1.0,1
+Q03,single fact,dense,0.0,0,1.0,1,1.0,1,1.0,1
+Q03,single fact,bm25,0.0,0,1.0,1,1.0,1,1.0,1
+Q03,single fact,hybrid,0.0,0,1.0,1,1.0,1,1.0,1
+Q03,single fact,rerank,0.0,0,1.0,1,1.0,1,1.0,1
+Q04,single fact,dense,0.0,0,0.0,0,0.0,0,0.0,0
+Q04,single fact,bm25,0.0,0,0.0,0,1.0,1,1.0,1
+Q04,single fact,hybrid,0.0,0,0.0,0,0.0,0,1.0,1
+Q04,single fact,rerank,0.0,0,0.0,0,0.0,0,1.0,1
+Q05,"two years, one report",dense,0.0,0,0.0,0,0.0,0,0.0,0
+Q05,"two years, one report",bm25,0.0,0,1.0,1,1.0,1,1.0,1
+Q05,"two years, one report",hybrid,0.0,0,0.0,0,0.0,0,1.0,1
+Q05,"two years, one report",rerank,1.0,1,1.0,1,1.0,1,1.0,1
+Q06,multi-hop: across years,dense,0.0,0,0.0,0,0.0,0,0.0,0
+Q06,multi-hop: across years,bm25,0.0,0,0.0,0,0.0,0,0.0,0
+Q06,multi-hop: across years,hybrid,0.0,0,0.0,0,0.0,0,0.0,0
+Q06,multi-hop: across years,rerank,0.0,0,0.0,0,0.5,1,0.5,1
+Q07,multi-hop: across years,dense,0.0,0,0.0,0,0.0,0,0.0,0
+Q07,multi-hop: across years,bm25,0.0,0,0.0,0,0.5,1,1.0,1
+Q07,multi-hop: across years,hybrid,0.0,0,0.0,0,0.0,0,0.5,1
+Q07,multi-hop: across years,rerank,0.0,0,0.0,0,0.0,0,1.0,1
+Q08,multi-hop: across companies,dense,0.0,0,0.0,0,0.0,0,0.0,0
+Q08,multi-hop: across companies,bm25,0.0,0,0.5,1,0.5,1,0.5,1
+Q08,multi-hop: across companies,hybrid,0.0,0,0.0,0,0.5,1,0.5,1
+Q08,multi-hop: across companies,rerank,0.0,0,0.0,0,0.0,0,0.5,1
+Q09,table figure,dense,0.0,0,0.0,0,0.0,0,0.0,0
+Q09,table figure,bm25,0.0,0,1.0,1,1.0,1,1.0,1
+Q09,table figure,hybrid,0.0,0,0.0,0,0.0,0,1.0,1
+Q09,table figure,rerank,0.0,0,1.0,1,1.0,1,1.0,1
+Q10,multi-hop: across years,dense,0.0,0,0.0,0,0.0,0,0.0,0
+Q10,multi-hop: across years,bm25,0.5,1,1.0,1,1.0,1,1.0,1
+Q10,multi-hop: across years,hybrid,0.5,1,0.5,1,1.0,1,1.0,1
+Q10,multi-hop: across years,rerank,0.0,0,0.5,1,0.5,1,1.0,1
+Q12,multi-hop: across companies and years,dense,0.0,0,0.0,0,0.0,0,0.0,0
+Q12,multi-hop: across companies and years,bm25,0.0,0,0.0,0,0.0,0,0.0,0
+Q12,multi-hop: across companies and years,hybrid,0.0,0,0.0,0,0.0,0,0.0,0
+Q12,multi-hop: across companies and years,rerank,0.0,0,0.0,0,0.0,0,0.0,0
+Q13,quant: calculation,dense,0.0,0,0.0,0,0.0,0,0.0,0
+Q13,quant: calculation,bm25,0.0,0,0.0,0,0.0,0,0.0,0
+Q13,quant: calculation,hybrid,0.0,0,0.0,0,0.0,0,0.0,0
+Q13,quant: calculation,rerank,0.0,0,0.0,0,0.0,0,0.0,0
+Q14,quant: calculation,dense,0.0,0,0.0,0,0.0,0,1.0,1
+Q14,quant: calculation,bm25,0.0,0,0.0,0,0.0,0,1.0,1
+Q14,quant: calculation,hybrid,0.0,0,0.0,0,1.0,1,1.0,1
+Q14,quant: calculation,rerank,1.0,1,1.0,1,1.0,1,1.0,1
+Q15,multi-hop: across years,dense,0.0,0,0.0,0,0.0,0,0.0,0
+Q15,multi-hop: across years,bm25,0.0,0,0.5,1,0.5,1,0.5,1
+Q15,multi-hop: across years,hybrid,0.0,0,0.0,0,0.5,1,1.0,1
+Q15,multi-hop: across years,rerank,0.5,1,0.5,1,0.5,1,1.0,1
+Q16,"multi-hop: two facts, one report",dense,0.0,0,0.0,0,0.0,0,0.0,0
+Q16,"multi-hop: two facts, one report",bm25,0.0,0,0.0,0,0.0,0,1.0,1
+Q16,"multi-hop: two facts, one report",hybrid,0.0,0,0.5,1,0.5,1,1.0,1
+Q16,"multi-hop: two facts, one report",rerank,0.5,1,1.0,1,1.0,1,1.0,1
+Q17,multi-hop: across years,dense,0.5,1,1.0,1,1.0,1,1.0,1
+Q17,multi-hop: across years,bm25,0.5,1,0.5,1,0.5,1,0.5,1
+Q17,multi-hop: across years,hybrid,0.5,1,1.0,1,1.0,1,1.0,1
+Q17,multi-hop: across years,rerank,0.5,1,0.5,1,0.5,1,0.5,1
+Q18,quant: table figure,dense,0.0,0,0.0,0,0.0,0,0.0,0
+Q18,quant: table figure,bm25,0.0,0,1.0,1,1.0,1,1.0,1
+Q18,quant: table figure,hybrid,0.0,0,0.0,0,1.0,1,1.0,1
+Q18,quant: table figure,rerank,0.0,0,1.0,1,1.0,1,1.0,1
+Q21,single fact,dense,0.0,0,1.0,1,1.0,1,1.0,1
+Q21,single fact,bm25,0.0,0,1.0,1,1.0,1,1.0,1
+Q21,single fact,hybrid,0.0,0,1.0,1,1.0,1,1.0,1
+Q21,single fact,rerank,0.0,0,1.0,1,1.0,1,1.0,1
+Q22,single fact,dense,1.0,1,1.0,1,1.0,1,1.0,1
+Q22,single fact,bm25,0.0,0,0.0,0,1.0,1,1.0,1
+Q22,single fact,hybrid,1.0,1,1.0,1,1.0,1,1.0,1
+Q22,single fact,rerank,1.0,1,1.0,1,1.0,1,1.0,1
+Q23,"two years, one report",dense,0.0,0,0.0,0,0.0,0,0.0,0
+Q23,"two years, one report",bm25,0.0,0,1.0,1,1.0,1,1.0,1
+Q23,"two years, one report",hybrid,0.0,0,0.0,0,0.0,0,1.0,1
+Q23,"two years, one report",rerank,0.0,0,1.0,1,1.0,1,1.0,1
+Q24,single fact,dense,0.0,0,0.0,0,1.0,1,1.0,1
+Q24,single fact,bm25,0.0,0,0.0,0,1.0,1,1.0,1
+Q24,single fact,hybrid,1.0,1,1.0,1,1.0,1,1.0,1
+Q24,single fact,rerank,0.0,0,0.0,0,1.0,1,1.0,1
+Q25,single fact,dense,0.0,0,1.0,1,1.0,1,1.0,1
+Q25,single fact,bm25,0.0,0,1.0,1,1.0,1,1.0,1
+Q25,single fact,hybrid,1.0,1,1.0,1,1.0,1,1.0,1
+Q25,single fact,rerank,0.0,0,1.0,1,1.0,1,1.0,1
+Q26,single fact,dense,0.0,0,1.0,1,1.0,1,1.0,1
+Q26,single fact,bm25,1.0,1,1.0,1,1.0,1,1.0,1
+Q26,single fact,hybrid,1.0,1,1.0,1,1.0,1,1.0,1
+Q26,single fact,rerank,1.0,1,1.0,1,1.0,1,1.0,1
+Q27,single fact,dense,1.0,1,1.0,1,1.0,1,1.0,1
+Q27,single fact,bm25,1.0,1,1.0,1,1.0,1,1.0,1
+Q27,single fact,hybrid,1.0,1,1.0,1,1.0,1,1.0,1
+Q27,single fact,rerank,1.0,1,1.0,1,1.0,1,1.0,1
+Q28,single fact,dense,0.0,0,0.0,0,1.0,1,1.0,1
+Q28,single fact,bm25,0.0,0,1.0,1,1.0,1,1.0,1
+Q28,single fact,hybrid,0.0,0,1.0,1,1.0,1,1.0,1
+Q28,single fact,rerank,1.0,1,1.0,1,1.0,1,1.0,1
+Q29,single fact,dense,0.0,0,0.0,0,0.0,0,0.0,0
+Q29,single fact,bm25,1.0,1,1.0,1,1.0,1,1.0,1
+Q29,single fact,hybrid,0.0,0,1.0,1,1.0,1,1.0,1
+Q29,single fact,rerank,0.0,0,0.0,0,1.0,1,1.0,1
+Q30,single fact,dense,0.0,0,0.0,0,1.0,1,1.0,1
+Q30,single fact,bm25,0.0,0,1.0,1,1.0,1,1.0,1
+Q30,single fact,hybrid,1.0,1,1.0,1,1.0,1,1.0,1
+Q30,single fact,rerank,1.0,1,1.0,1,1.0,1,1.0,1
+Q31,single fact,dense,0.0,0,0.0,0,0.0,0,0.0,0
+Q31,single fact,bm25,1.0,1,1.0,1,1.0,1,1.0,1
+Q31,single fact,hybrid,0.0,0,1.0,1,1.0,1,1.0,1
+Q31,single fact,rerank,0.0,0,0.0,0,0.0,0,1.0,1
+Q32,single fact,dense,0.0,0,0.0,0,0.0,0,1.0,1
+Q32,single fact,bm25,0.0,0,0.0,0,1.0,1,1.0,1
+Q32,single fact,hybrid,0.0,0,0.0,0,0.0,0,0.0,0
+Q32,single fact,rerank,0.0,0,0.0,0,0.0,0,0.0,0
+Q33,table figure,dense,0.0,0,1.0,1,1.0,1,1.0,1
+Q33,table figure,bm25,1.0,1,1.0,1,1.0,1,1.0,1
+Q33,table figure,hybrid,1.0,1,1.0,1,1.0,1,1.0,1
+Q33,table figure,rerank,1.0,1,1.0,1,1.0,1,1.0,1
+Q34,table figure,dense,1.0,1,1.0,1,1.0,1,1.0,1
+Q34,table figure,bm25,0.0,0,1.0,1,1.0,1,1.0,1
+Q34,table figure,hybrid,1.0,1,1.0,1,1.0,1,1.0,1
+Q34,table figure,rerank,1.0,1,1.0,1,1.0,1,1.0,1
+Q35,table figure,dense,1.0,1,1.0,1,1.0,1,1.0,1
+Q35,table figure,bm25,1.0,1,1.0,1,1.0,1,1.0,1
+Q35,table figure,hybrid,1.0,1,1.0,1,1.0,1,1.0,1
+Q35,table figure,rerank,1.0,1,1.0,1,1.0,1,1.0,1
+Q36,table figure,dense,0.0,0,1.0,1,1.0,1,1.0,1
+Q36,table figure,bm25,0.0,0,0.0,0,1.0,1,1.0,1
+Q36,table figure,hybrid,0.0,0,1.0,1,1.0,1,1.0,1
+Q36,table figure,rerank,0.0,0,1.0,1,1.0,1,1.0,1
+Q37,table figure,dense,1.0,1,1.0,1,1.0,1,1.0,1
+Q37,table figure,bm25,0.0,0,0.0,0,0.0,0,0.0,0
+Q37,table figure,hybrid,0.0,0,1.0,1,1.0,1,1.0,1
+Q37,table figure,rerank,1.0,1,1.0,1,1.0,1,1.0,1
+Q38,table figure,dense,0.0,0,0.0,0,0.0,0,1.0,1
+Q38,table figure,bm25,0.0,0,0.0,0,0.0,0,0.0,0
+Q38,table figure,hybrid,0.0,0,1.0,1,1.0,1,1.0,1
+Q38,table figure,rerank,1.0,1,1.0,1,1.0,1,1.0,1
+Q39,multi-hop: across years,dense,0.5,1,0.5,1,0.5,1,0.5,1
+Q39,multi-hop: across years,bm25,0.0,0,0.0,0,0.0,0,0.5,1
+Q39,multi-hop: across years,hybrid,0.0,0,0.5,1,0.5,1,0.5,1
+Q39,multi-hop: across years,rerank,0.0,0,0.5,1,1.0,1,1.0,1
+Q40,multi-hop: across years,dense,0.0,0,0.0,0,0.5,1,1.0,1
+Q40,multi-hop: across years,bm25,0.0,0,0.0,0,0.5,1,1.0,1
+Q40,multi-hop: across years,hybrid,0.0,0,1.0,1,1.0,1,1.0,1
+Q40,multi-hop: across years,rerank,0.0,0,0.0,0,0.5,1,1.0,1
+Q41,multi-hop: across years,dense,0.5,1,0.5,1,0.5,1,0.5,1
+Q41,multi-hop: across years,bm25,0.5,1,1.0,1,1.0,1,1.0,1
+Q41,multi-hop: across years,hybrid,0.5,1,0.5,1,1.0,1,1.0,1
+Q41,multi-hop: across years,rerank,0.5,1,0.5,1,0.5,1,1.0,1
+Q42,multi-hop: across years,dense,0.5,1,0.5,1,0.5,1,0.5,1
+Q42,multi-hop: across years,bm25,0.0,0,0.0,0,0.0,0,0.0,0
+Q42,multi-hop: across years,hybrid,0.0,0,0.0,0,0.5,1,0.5,1
+Q42,multi-hop: across years,rerank,0.0,0,0.5,1,0.5,1,0.5,1
+Q43,multi-hop: across years,dense,0.0,0,0.0,0,1.0,1,1.0,1
+Q43,multi-hop: across years,bm25,0.5,1,0.5,1,0.5,1,0.5,1
+Q43,multi-hop: across years,hybrid,0.0,0,0.0,0,1.0,1,1.0,1
+Q43,multi-hop: across years,rerank,0.0,0,0.0,0,1.0,1,1.0,1
+Q44,multi-hop: across years,dense,0.5,1,0.5,1,0.5,1,1.0,1
+Q44,multi-hop: across years,bm25,0.5,1,1.0,1,1.0,1,1.0,1
+Q44,multi-hop: across years,hybrid,0.5,1,1.0,1,1.0,1,1.0,1
+Q44,multi-hop: across years,rerank,0.5,1,1.0,1,1.0,1,1.0,1
+Q45,multi-hop: across companies,dense,0.0,0,0.5,1,0.5,1,1.0,1
+Q45,multi-hop: across companies,bm25,0.0,0,0.5,1,0.5,1,0.5,1
+Q45,multi-hop: across companies,hybrid,0.0,0,0.5,1,1.0,1,1.0,1
+Q45,multi-hop: across companies,rerank,0.5,1,1.0,1,1.0,1,1.0,1
+Q46,multi-hop: across companies,dense,0.0,0,0.0,0,0.0,0,0.0,0
+Q46,multi-hop: across companies,bm25,0.5,1,0.5,1,0.5,1,0.5,1
+Q46,multi-hop: across companies,hybrid,0.0,0,0.0,0,0.5,1,0.5,1
+Q46,multi-hop: across companies,rerank,0.0,0,0.0,0,0.5,1,1.0,1
+Q47,multi-hop: across companies,dense,0.0,0,0.0,0,0.0,0,0.0,0
+Q47,multi-hop: across companies,bm25,0.0,0,0.0,0,0.0,0,0.0,0
+Q47,multi-hop: across companies,hybrid,0.0,0,0.5,1,0.5,1,0.5,1
+Q47,multi-hop: across companies,rerank,0.5,1,0.5,1,0.5,1,0.5,1
+Q48,multi-hop: across companies,dense,0.0,0,0.5,1,0.5,1,0.5,1
+Q48,multi-hop: across companies,bm25,0.0,0,0.0,0,0.0,0,0.0,0
+Q48,multi-hop: across companies,hybrid,0.0,0,0.0,0,0.0,0,0.5,1
+Q48,multi-hop: across companies,rerank,0.5,1,0.5,1,0.5,1,0.5,1
+Q49,multi-hop: across companies,dense,0.0,0,0.0,0,0.0,0,0.0,0
+Q49,multi-hop: across companies,bm25,0.0,0,0.5,1,0.5,1,0.5,1
+Q49,multi-hop: across companies,hybrid,0.0,0,0.0,0,0.0,0,0.0,0
+Q49,multi-hop: across companies,rerank,0.0,0,0.0,0,0.5,1,1.0,1
+Q50,quant: calculation,dense,0.0,0,0.0,0,0.0,0,0.0,0
+Q50,quant: calculation,bm25,0.0,0,0.0,0,0.0,0,0.0,0
+Q50,quant: calculation,hybrid,0.0,0,0.0,0,0.0,0,1.0,1
+Q50,quant: calculation,rerank,0.0,0,0.0,0,0.0,0,0.0,0
+Q51,quant: calculation,dense,0.0,0,1.0,1,1.0,1,1.0,1
+Q51,quant: calculation,bm25,0.0,0,1.0,1,1.0,1,1.0,1
+Q51,quant: calculation,hybrid,1.0,1,1.0,1,1.0,1,1.0,1
+Q51,quant: calculation,rerank,1.0,1,1.0,1,1.0,1,1.0,1
+Q52,quant: calculation,dense,0.0,0,0.0,0,0.0,0,0.0,0
+Q52,quant: calculation,bm25,0.0,0,0.0,0,0.0,0,0.0,0
+Q52,quant: calculation,hybrid,0.0,0,0.0,0,0.0,0,0.0,0
+Q52,quant: calculation,rerank,0.0,0,0.0,0,0.0,0,0.0,0
+Q53,quant: calculation,dense,0.0,0,1.0,1,1.0,1,1.0,1
+Q53,quant: calculation,bm25,0.0,0,0.0,0,0.0,0,0.0,0
+Q53,quant: calculation,hybrid,0.0,0,0.0,0,0.0,0,0.0,0
+Q53,quant: calculation,rerank,0.0,0,1.0,1,1.0,1,1.0,1
+Q54,quant: calculation,dense,1.0,1,1.0,1,1.0,1,1.0,1
+Q54,quant: calculation,bm25,0.0,0,1.0,1,1.0,1,1.0,1
+Q54,quant: calculation,hybrid,0.0,0,1.0,1,1.0,1,1.0,1
+Q54,quant: calculation,rerank,1.0,1,1.0,1,1.0,1,1.0,1
+Q55,quant: calculation,dense,0.0,0,0.0,0,0.0,0,0.0,0
+Q55,quant: calculation,bm25,1.0,1,1.0,1,1.0,1,1.0,1
+Q55,quant: calculation,hybrid,0.0,0,1.0,1,1.0,1,1.0,1
+Q55,quant: calculation,rerank,1.0,1,1.0,1,1.0,1,1.0,1

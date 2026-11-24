@@ -1,0 +1,6 @@
+failure_category,questions
+none,29
+reasoning error (incomplete or wrong answer),22
+verifier false fail,6
+hallucination (wrong answer passed the verifier),2
+retrieval miss,1

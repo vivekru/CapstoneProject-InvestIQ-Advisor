@@ -1,0 +1,61 @@
+id,type,status,grade,retrieval_hit,loops,tool_calls,api_calls,tokens,seconds,failure_category
+Q01,single fact,verified,correct,True,0,2,4,3149,33.5,none
+Q02,single fact,verified,correct,False,0,3,5,5941,43.4,none
+Q03,single fact,verified,correct,True,0,2,4,3131,30.2,none
+Q04,single fact,failed_verification,correct,True,1,6,9,12671,73.4,verifier false fail
+Q05,"two years, one report",verified,wrong,True,0,4,5,5359,36.5,hallucination (wrong answer passed the verifier)
+Q06,multi-hop: across years,verified,correct,True,0,7,6,7580,61.3,none
+Q07,multi-hop: across years,failed_verification,partial,True,1,8,10,15540,67.4,reasoning error (incomplete or wrong answer)
+Q08,multi-hop: across companies,verified,correct,True,0,6,6,6743,66.0,none
+Q09,table figure,verified,partial,True,0,7,6,11270,62.5,reasoning error (incomplete or wrong answer)
+Q10,multi-hop: across years,verified,correct,True,0,6,5,4750,37.3,none
+Q11,should abstain,abstained,correct,,0,0,1,423,1.3,none
+Q12,multi-hop: across companies and years,verified,correct,True,0,12,7,8804,18.1,none
+Q13,quant: calculation,verified,correct,True,0,7,6,7545,69.6,none
+Q14,quant: calculation,verified,correct,True,0,3,4,4015,24.7,none
+Q15,multi-hop: across years,verified,partial,True,0,6,6,8410,52.9,reasoning error (incomplete or wrong answer)
+Q16,"multi-hop: two facts, one report",failed_verification,partial,True,1,6,8,10905,49.0,reasoning error (incomplete or wrong answer)
+Q17,multi-hop: across years,verified,correct,True,0,4,5,5565,52.1,none
+Q18,quant: table figure,verified,correct,True,0,7,6,9786,70.3,none
+Q19,should abstain: forecast,abstained,correct,,0,0,0,0,0.0,none
+Q20,should abstain: advice,abstained,correct,,0,0,0,0,0.0,none
+Q21,single fact,verified,wrong,True,0,4,5,5507,40.9,hallucination (wrong answer passed the verifier)
+Q22,single fact,failed_verification,partial,True,1,7,8,9018,55.0,reasoning error (incomplete or wrong answer)
+Q23,"two years, one report",failed_verification,partial,True,1,6,8,8933,50.0,reasoning error (incomplete or wrong answer)
+Q24,single fact,failed_verification,wrong,True,1,4,8,10673,44.7,reasoning error (incomplete or wrong answer)
+Q25,single fact,failed_verification,partial,True,1,6,8,8608,58.2,reasoning error (incomplete or wrong answer)
+Q26,single fact,verified,correct,True,0,2,4,3420,23.2,none
+Q27,single fact,verified,correct,True,1,4,7,8071,38.5,none
+Q28,single fact,failed_verification,wrong,True,1,4,7,6214,35.4,reasoning error (incomplete or wrong answer)
+Q29,single fact,failed_verification,wrong,True,1,4,7,7430,44.7,reasoning error (incomplete or wrong answer)
+Q30,single fact,verified,correct,True,0,2,4,4174,22.3,none
+Q31,single fact,failed_verification,partial,True,1,4,7,6855,32.8,reasoning error (incomplete or wrong answer)
+Q32,single fact,verified,partial,True,0,2,4,4412,23.3,reasoning error (incomplete or wrong answer)
+Q33,table figure,verified,correct,True,1,6,8,10111,53.7,none
+Q34,table figure,verified,correct,True,1,4,7,7948,49.3,none
+Q35,table figure,failed_verification,correct,True,1,3,7,8221,35.5,verifier false fail
+Q36,table figure,failed_verification,correct,True,1,4,7,7697,44.9,verifier false fail
+Q37,table figure,failed_verification,wrong,True,1,4,7,8559,22.6,reasoning error (incomplete or wrong answer)
+Q38,table figure,failed_verification,wrong,True,1,4,7,5761,18.6,reasoning error (incomplete or wrong answer)
+Q39,multi-hop: across years,failed_verification,partial,True,1,9,9,10185,86.1,reasoning error (incomplete or wrong answer)
+Q40,multi-hop: across years,failed_verification,wrong,True,1,9,9,12148,76.7,reasoning error (incomplete or wrong answer)
+Q41,multi-hop: across years,failed_verification,partial,True,1,9,9,14014,84.1,reasoning error (incomplete or wrong answer)
+Q42,multi-hop: across years,failed_verification,correct,True,1,9,9,12712,75.0,verifier false fail
+Q43,multi-hop: across years,failed_verification,partial,True,1,6,8,9304,50.7,reasoning error (incomplete or wrong answer)
+Q44,multi-hop: across years,failed_verification,partial,True,1,9,9,12545,55.8,reasoning error (incomplete or wrong answer)
+Q45,multi-hop: across companies,failed_verification,correct,True,1,8,9,11270,43.7,verifier false fail
+Q46,multi-hop: across companies,verified,correct,True,0,4,5,5187,14.2,none
+Q47,multi-hop: across companies,verified,partial,True,0,4,5,5382,21.7,reasoning error (incomplete or wrong answer)
+Q48,multi-hop: across companies,failed_verification,correct,True,1,6,8,10399,68.4,verifier false fail
+Q49,multi-hop: across companies,verified,correct,True,0,10,9,15336,128.9,none
+Q50,quant: calculation,verified,wrong,False,0,2,4,4213,21.7,retrieval miss
+Q51,quant: calculation,verified,correct,True,1,4,7,8827,22.5,none
+Q52,quant: calculation,failed_verification,partial,True,1,9,9,11306,68.4,reasoning error (incomplete or wrong answer)
+Q53,quant: calculation,verified,correct,True,0,2,4,4232,20.1,none
+Q54,quant: calculation,verified,correct,True,0,7,6,7379,53.3,none
+Q55,quant: calculation,failed_verification,wrong,True,1,9,10,17262,78.7,reasoning error (incomplete or wrong answer)
+Q56,should abstain,abstained,correct,,0,0,1,425,1.3,none
+Q57,should abstain: forecast,abstained,correct,,0,0,0,0,0.0,none
+Q58,should abstain: advice,abstained,correct,,0,0,0,0,0.0,none
+Q59,should abstain: not in reports,abstained,correct,,0,0,0,0,0.0,none
+Q60,should abstain: personal data,abstained,correct,,0,0,0,0,0.0,none

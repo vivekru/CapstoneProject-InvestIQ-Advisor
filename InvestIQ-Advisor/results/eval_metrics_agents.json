@@ -1,0 +1,13 @@
+{
+  "questions": 60,
+  "end_to_end_accuracy": 0.583,
+  "accuracy_with_partial_half": 0.708,
+  "task_completion_rate": 0.483,
+  "retrieval_hit_rate": 0.962,
+  "avg_tool_calls_per_task": 4.77,
+  "avg_llm_calls_per_query": 5.88,
+  "avg_tokens_per_query": 7255,
+  "avg_cost_per_query": 0.0,
+  "avg_latency_s": 41.9,
+  "p95_latency_s": 79.0
+}

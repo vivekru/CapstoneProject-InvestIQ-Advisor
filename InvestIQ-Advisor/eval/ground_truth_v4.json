@@ -1,0 +1,770 @@
+[
+ {
+  "id": "Q01",
+  "type": "single fact",
+  "question": "How many people did Microsoft employ as of June 30, 2026?",
+  "expected": "Approximately 223,000 full-time employees: 121,000 in the U.S. and 102,000 internationally.",
+  "gold": [
+   {
+    "file": "MSFT_10K_FY2026.pdf",
+    "pdf_page": 9
+   }
+  ]
+ },
+ {
+  "id": "Q02",
+  "type": "single fact",
+  "question": "What are Apple's reportable segments?",
+  "expected": "Americas, Europe, Greater China, Japan and Rest of Asia Pacific (Apple manages its business primarily on a geographic basis).",
+  "gold": [
+   {
+    "file": "AAPL_10K_FY2026.pdf",
+    "pdf_page": 5
+   }
+  ]
+ },
+ {
+  "id": "Q03",
+  "type": "single fact",
+  "question": "What three segments does Microsoft use to report its financial performance?",
+  "expected": "Productivity and Business Processes, Intelligent Cloud, and More Personal Computing.",
+  "gold": [
+   {
+    "file": "MSFT_10K_FY2026.pdf",
+    "pdf_page": 5
+   }
+  ]
+ },
+ {
+  "id": "Q04",
+  "type": "single fact",
+  "question": "By how much did Microsoft's Azure and other cloud services revenue grow in fiscal year 2026, and what drove it?",
+  "expected": "It grew 41%, driven by demand for services across the platform with continued growth across all workloads.",
+  "gold": [
+   {
+    "file": "MSFT_10K_FY2026.pdf",
+    "pdf_page": 39
+   }
+  ]
+ },
+ {
+  "id": "Q05",
+  "type": "two years, one report",
+  "question": "What impact did Microsoft's investments in OpenAI have on other income in fiscal years 2026 and 2025?",
+  "expected": "Other income (expense), net included $6.5 billion of net gains in FY2026 and $4.8 billion of net losses in FY2025 from investments in OpenAI.",
+  "gold": [
+   {
+    "file": "MSFT_10K_FY2026.pdf",
+    "pdf_page": 41
+   }
+  ]
+ },
+ {
+  "id": "Q06",
+  "type": "multi-hop: across years",
+  "question": "How did Microsoft's full-time headcount change between June 30, 2025 and June 30, 2026?",
+  "expected": "It fell from approximately 228,000 (June 30, 2025) to approximately 223,000 (June 30, 2026), a decrease of about 5,000.",
+  "gold": [
+   {
+    "file": "MSFT_10K_FY2025.pdf",
+    "pdf_page": 11
+   },
+   {
+    "file": "MSFT_10K_FY2026.pdf",
+    "pdf_page": 9
+   }
+  ]
+ },
+ {
+  "id": "Q07",
+  "type": "multi-hop: across years",
+  "question": "Compare the growth of Microsoft's Azure and other cloud services revenue in fiscal year 2025 and fiscal year 2026.",
+  "expected": "Azure and other cloud services revenue grew 34% in FY2025 and 41% in FY2026, so growth accelerated.",
+  "gold": [
+   {
+    "file": "MSFT_10K_FY2025.pdf",
+    "pdf_page": 40
+   },
+   {
+    "file": "MSFT_10K_FY2026.pdf",
+    "pdf_page": 39
+   }
+  ]
+ },
+ {
+  "id": "Q08",
+  "type": "multi-hop: across companies",
+  "question": "At the end of fiscal year 2026, which company had more employees, Microsoft or Apple, and by roughly how many?",
+  "expected": "Microsoft: about 223,000 full-time employees (June 30, 2026); Apple: about 167,000 full-time equivalent employees (September 26, 2026). Microsoft had roughly 56,000 more. Note the two use different headcount definitions.",
+  "gold": [
+   {
+    "file": "MSFT_10K_FY2026.pdf",
+    "pdf_page": 9
+   },
+   {
+    "file": "AAPL_10K_FY2026.pdf",
+    "pdf_page": 8
+   }
+  ]
+ },
+ {
+  "id": "Q09",
+  "type": "table figure",
+  "question": "What were Apple's total net sales in fiscal year 2026, and how much did they grow compared with 2025?",
+  "expected": "$478,834 million in FY2026, up 15% from $416,161 million in FY2025.",
+  "gold": [
+   {
+    "file": "AAPL_10K_FY2026.pdf",
+    "pdf_page": 28
+   }
+  ]
+ },
+ {
+  "id": "Q10",
+  "type": "multi-hop: across years",
+  "question": "How did Apple's number of full-time equivalent employees change from fiscal 2025 to fiscal 2026?",
+  "expected": "It rose from approximately 166,000 (September 27, 2025) to approximately 167,000 (September 26, 2026).",
+  "gold": [
+   {
+    "file": "AAPL_10K_FY2025.pdf",
+    "pdf_page": 7
+   },
+   {
+    "file": "AAPL_10K_FY2026.pdf",
+    "pdf_page": 8
+   }
+  ]
+ },
+ {
+  "id": "Q11",
+  "type": "should abstain",
+  "question": "What was Tesla's total revenue in fiscal year 2026?",
+  "expected": "ABSTAIN",
+  "gold": []
+ },
+ {
+  "id": "Q12",
+  "type": "multi-hop: across companies and years",
+  "question": "Compare how full-time headcount changed at Microsoft and at Apple from fiscal year 2025 to fiscal year 2026.",
+  "expected": "Microsoft fell from about 228,000 (June 30, 2025) to about 223,000 (June 30, 2026), down about 5,000; Apple rose from about 166,000 (Sept 27, 2025) to about 167,000 (Sept 26, 2026), up about 1,000.",
+  "gold": [
+   {
+    "file": "MSFT_10K_FY2025.pdf",
+    "pdf_page": 11
+   },
+   {
+    "file": "MSFT_10K_FY2026.pdf",
+    "pdf_page": 9
+   },
+   {
+    "file": "AAPL_10K_FY2025.pdf",
+    "pdf_page": 7
+   },
+   {
+    "file": "AAPL_10K_FY2026.pdf",
+    "pdf_page": 8
+   }
+  ]
+ },
+ {
+  "id": "Q13",
+  "type": "quant: calculation",
+  "question": "By what percentage did Microsoft's full-time headcount change from June 30, 2025 to June 30, 2026?",
+  "expected": "About -2.2% (from about 228,000 to about 223,000).",
+  "gold": [
+   {
+    "file": "MSFT_10K_FY2025.pdf",
+    "pdf_page": 11
+   },
+   {
+    "file": "MSFT_10K_FY2026.pdf",
+    "pdf_page": 9
+   }
+  ]
+ },
+ {
+  "id": "Q14",
+  "type": "quant: calculation",
+  "question": "What share of Microsoft's full-time employees were based in the United States as of June 30, 2026?",
+  "expected": "About 54% (121,000 of about 223,000).",
+  "gold": [
+   {
+    "file": "MSFT_10K_FY2026.pdf",
+    "pdf_page": 9
+   }
+  ]
+ },
+ {
+  "id": "Q15",
+  "type": "multi-hop: across years",
+  "question": "How did Microsoft's total revenue growth in fiscal year 2026 compare with fiscal year 2025?",
+  "expected": "FY2026 revenue increased $50.1 billion or 18%; FY2025 revenue increased $36.6 billion or 15%, so growth accelerated.",
+  "gold": [
+   {
+    "file": "MSFT_10K_FY2026.pdf",
+    "pdf_page": 37
+   },
+   {
+    "file": "MSFT_10K_FY2025.pdf",
+    "pdf_page": 38
+   }
+  ]
+ },
+ {
+  "id": "Q16",
+  "type": "multi-hop: two facts, one report",
+  "question": "In fiscal year 2026, how much did Microsoft's Intelligent Cloud revenue grow, and how much did its total operating income grow?",
+  "expected": "Intelligent Cloud revenue increased $31.5 billion or 30%; operating income increased $26.7 billion or 21%.",
+  "gold": [
+   {
+    "file": "MSFT_10K_FY2026.pdf",
+    "pdf_page": 39
+   },
+   {
+    "file": "MSFT_10K_FY2026.pdf",
+    "pdf_page": 37
+   }
+  ]
+ },
+ {
+  "id": "Q17",
+  "type": "multi-hop: across years",
+  "question": "How did the drivers of Apple's Services net sales growth differ between fiscal year 2025 and fiscal year 2026?",
+  "expected": "FY2025: higher net sales from advertising, the App Store and cloud services; FY2026: higher net sales from advertising and cloud services (the App Store is no longer named).",
+  "gold": [
+   {
+    "file": "AAPL_10K_FY2025.pdf",
+    "pdf_page": 26
+   },
+   {
+    "file": "AAPL_10K_FY2026.pdf",
+    "pdf_page": 29
+   }
+  ]
+ },
+ {
+  "id": "Q18",
+  "type": "quant: table figure",
+  "question": "By how many dollars did Apple's total net sales increase from fiscal year 2025 to fiscal year 2026?",
+  "expected": "About $62,673 million ($478,834 million minus $416,161 million).",
+  "gold": [
+   {
+    "file": "AAPL_10K_FY2026.pdf",
+    "pdf_page": 28
+   }
+  ]
+ },
+ {
+  "id": "Q19",
+  "type": "should abstain: forecast",
+  "question": "What will Microsoft's revenue be in fiscal year 2028?",
+  "expected": "ABSTAIN",
+  "gold": []
+ },
+ {
+  "id": "Q20",
+  "type": "should abstain: advice",
+  "question": "Should I buy Apple stock now?",
+  "expected": "ABSTAIN",
+  "gold": []
+ },
+ {
+  "id": "Q21",
+  "type": "single fact",
+  "question": "What was Microsoft Cloud revenue in fiscal year 2026, and by how much did it grow?",
+  "expected": "$214.4 billion, up 27%.",
+  "gold": [
+   {
+    "file": "MSFT_10K_FY2026.pdf",
+    "pdf_page": 34
+   }
+  ]
+ },
+ {
+  "id": "Q22",
+  "type": "single fact",
+  "question": "By how much did Microsoft's commercial remaining performance obligation increase in fiscal year 2026?",
+  "expected": "It increased 84% to $678 billion.",
+  "gold": [
+   {
+    "file": "MSFT_10K_FY2026.pdf",
+    "pdf_page": 34
+   }
+  ]
+ },
+ {
+  "id": "Q23",
+  "type": "two years, one report",
+  "question": "What was Microsoft's effective tax rate in fiscal years 2026 and 2025?",
+  "expected": "19% in FY2026 and 18% in FY2025.",
+  "gold": [
+   {
+    "file": "MSFT_10K_FY2026.pdf",
+    "pdf_page": 41
+   }
+  ]
+ },
+ {
+  "id": "Q24",
+  "type": "single fact",
+  "question": "How much did Microsoft's LinkedIn revenue increase in fiscal year 2026?",
+  "expected": "LinkedIn revenue increased $2.0 billion or 11%, with growth across all lines of business.",
+  "gold": [
+   {
+    "file": "MSFT_10K_FY2026.pdf",
+    "pdf_page": 38
+   }
+  ]
+ },
+ {
+  "id": "Q25",
+  "type": "single fact",
+  "question": "Why did Microsoft's XBOX revenue decline in fiscal year 2026?",
+  "expected": "XBOX revenue decreased $1.7 billion or 7%, driven by declines in XBOX content and services (down 5%) and XBOX hardware (down 29% on lower console volume).",
+  "gold": [
+   {
+    "file": "MSFT_10K_FY2026.pdf",
+    "pdf_page": 39
+   }
+  ]
+ },
+ {
+  "id": "Q26",
+  "type": "single fact",
+  "question": "What was Microsoft's research and development expense in fiscal year 2026?",
+  "expected": "$35,562 million, up 9% from $32,488 million; 11% of revenue.",
+  "gold": [
+   {
+    "file": "MSFT_10K_FY2026.pdf",
+    "pdf_page": 40
+   }
+  ]
+ },
+ {
+  "id": "Q27",
+  "type": "single fact",
+  "question": "What was Apple's quarterly cash dividend per share as of September 26, 2026?",
+  "expected": "$0.27 per share (raised from $0.26 beginning in May 2026).",
+  "gold": [
+   {
+    "file": "AAPL_10K_FY2026.pdf",
+    "pdf_page": 31
+   }
+  ]
+ },
+ {
+  "id": "Q28",
+  "type": "single fact",
+  "question": "How much of its common stock did Apple repurchase during fiscal year 2026?",
+  "expected": "$85.8 billion (it also paid $15.7 billion in dividends and dividend equivalents).",
+  "gold": [
+   {
+    "file": "AAPL_10K_FY2026.pdf",
+    "pdf_page": 31
+   }
+  ]
+ },
+ {
+  "id": "Q29",
+  "type": "single fact",
+  "question": "What was Apple's effective tax rate in fiscal year 2026?",
+  "expected": "17.0% (up from 15.6% in FY2025).",
+  "gold": [
+   {
+    "file": "AAPL_10K_FY2026.pdf",
+    "pdf_page": 31
+   }
+  ]
+ },
+ {
+  "id": "Q30",
+  "type": "single fact",
+  "question": "What drove the increase in Apple's iPhone net sales in fiscal year 2026?",
+  "expected": "Higher net sales of Pro models; iPhone net sales rose 21% to $254,098 million.",
+  "gold": [
+   {
+    "file": "AAPL_10K_FY2026.pdf",
+    "pdf_page": 29
+   }
+  ]
+ },
+ {
+  "id": "Q31",
+  "type": "single fact",
+  "question": "What was Apple's total gross margin percentage in fiscal year 2026?",
+  "expected": "48.8% (Products 39.3%, Services 76.2%).",
+  "gold": [
+   {
+    "file": "AAPL_10K_FY2026.pdf",
+    "pdf_page": 30
+   }
+  ]
+ },
+ {
+  "id": "Q32",
+  "type": "single fact",
+  "question": "What were Microsoft's diluted earnings per share in fiscal year 2026?",
+  "expected": "$17.95, up 32% from $13.64 in FY2025.",
+  "gold": [
+   {
+    "file": "MSFT_10K_FY2026.pdf",
+    "pdf_page": 37
+   }
+  ]
+ },
+ {
+  "id": "Q33",
+  "type": "table figure",
+  "question": "What were Apple's Greater China net sales in fiscal year 2026, and how much did they change?",
+  "expected": "$82,378 million, up 28% from $64,377 million.",
+  "gold": [
+   {
+    "file": "AAPL_10K_FY2026.pdf",
+    "pdf_page": 28
+   }
+  ]
+ },
+ {
+  "id": "Q34",
+  "type": "table figure",
+  "question": "What was operating income of Microsoft's Intelligent Cloud segment in fiscal year 2026?",
+  "expected": "$56,972 million, up 28% from $44,589 million.",
+  "gold": [
+   {
+    "file": "MSFT_10K_FY2026.pdf",
+    "pdf_page": 38
+   }
+  ]
+ },
+ {
+  "id": "Q35",
+  "type": "table figure",
+  "question": "What were Apple's Services net sales in fiscal year 2026?",
+  "expected": "$123,301 million, up 13% from $109,158 million.",
+  "gold": [
+   {
+    "file": "AAPL_10K_FY2026.pdf",
+    "pdf_page": 29
+   }
+  ]
+ },
+ {
+  "id": "Q36",
+  "type": "table figure",
+  "question": "What was Apple's research and development expense in fiscal year 2026?",
+  "expected": "$45,765 million, up 32% from $34,550 million; 10% of total net sales.",
+  "gold": [
+   {
+    "file": "AAPL_10K_FY2026.pdf",
+    "pdf_page": 30
+   }
+  ]
+ },
+ {
+  "id": "Q37",
+  "type": "table figure",
+  "question": "What was Microsoft's More Personal Computing revenue in fiscal year 2026?",
+  "expected": "$54,052 million, down 1% from $54,649 million.",
+  "gold": [
+   {
+    "file": "MSFT_10K_FY2026.pdf",
+    "pdf_page": 38
+   }
+  ]
+ },
+ {
+  "id": "Q38",
+  "type": "table figure",
+  "question": "What was Apple's net income in fiscal year 2026?",
+  "expected": "$132,175 million (FY2025: $112,010 million).",
+  "gold": [
+   {
+    "file": "AAPL_10K_FY2026.pdf",
+    "pdf_page": 35
+   }
+  ]
+ },
+ {
+  "id": "Q39",
+  "type": "multi-hop: across years",
+  "question": "How did Microsoft's effective tax rate change from fiscal year 2024 to fiscal year 2026?",
+  "expected": "18% in FY2024 and FY2025, then 19% in FY2026.",
+  "gold": [
+   {
+    "file": "MSFT_10K_FY2025.pdf",
+    "pdf_page": 42
+   },
+   {
+    "file": "MSFT_10K_FY2026.pdf",
+    "pdf_page": 41
+   }
+  ]
+ },
+ {
+  "id": "Q40",
+  "type": "multi-hop: across years",
+  "question": "Compare the growth of Microsoft's LinkedIn revenue in fiscal year 2025 and fiscal year 2026.",
+  "expected": "FY2025: up $1.4 billion or 9%; FY2026: up $2.0 billion or 11%, so growth accelerated.",
+  "gold": [
+   {
+    "file": "MSFT_10K_FY2025.pdf",
+    "pdf_page": 39
+   },
+   {
+    "file": "MSFT_10K_FY2026.pdf",
+    "pdf_page": 38
+   }
+  ]
+ },
+ {
+  "id": "Q41",
+  "type": "multi-hop: across years",
+  "question": "How did Apple's quarterly dividend per share change between the end of fiscal year 2025 and the end of fiscal year 2026?",
+  "expected": "From $0.26 (September 27, 2025) to $0.27 (September 26, 2026).",
+  "gold": [
+   {
+    "file": "AAPL_10K_FY2025.pdf",
+    "pdf_page": 29
+   },
+   {
+    "file": "AAPL_10K_FY2026.pdf",
+    "pdf_page": 31
+   }
+  ]
+ },
+ {
+  "id": "Q42",
+  "type": "multi-hop: across years",
+  "question": "How did Apple's share repurchases in fiscal year 2026 compare with fiscal year 2025?",
+  "expected": "$85.8 billion in FY2026 versus $89.3 billion in FY2025, about $3.5 billion less.",
+  "gold": [
+   {
+    "file": "AAPL_10K_FY2025.pdf",
+    "pdf_page": 29
+   },
+   {
+    "file": "AAPL_10K_FY2026.pdf",
+    "pdf_page": 31
+   }
+  ]
+ },
+ {
+  "id": "Q43",
+  "type": "multi-hop: across years",
+  "question": "How did Microsoft's gaming (XBOX) revenue trend differ between fiscal year 2025 and fiscal year 2026?",
+  "expected": "FY2025: Gaming revenue increased $2.0 billion or 9%; FY2026: XBOX revenue decreased $1.7 billion or 7%.",
+  "gold": [
+   {
+    "file": "MSFT_10K_FY2025.pdf",
+    "pdf_page": 40
+   },
+   {
+    "file": "MSFT_10K_FY2026.pdf",
+    "pdf_page": 39
+   }
+  ]
+ },
+ {
+  "id": "Q44",
+  "type": "multi-hop: across years",
+  "question": "How did Apple's total gross margin percentage change from fiscal year 2024 to fiscal year 2026?",
+  "expected": "46.2% (FY2024), 46.9% (FY2025), 48.8% (FY2026): it rose each year.",
+  "gold": [
+   {
+    "file": "AAPL_10K_FY2026.pdf",
+    "pdf_page": 30
+   },
+   {
+    "file": "AAPL_10K_FY2025.pdf",
+    "pdf_page": 27
+   }
+  ]
+ },
+ {
+  "id": "Q45",
+  "type": "multi-hop: across companies",
+  "question": "Which company spent more on research and development in fiscal year 2026, Microsoft or Apple, and by how much?",
+  "expected": "Apple: $45,765 million; Microsoft: $35,562 million. Apple spent about $10.2 billion more.",
+  "gold": [
+   {
+    "file": "AAPL_10K_FY2026.pdf",
+    "pdf_page": 30
+   },
+   {
+    "file": "MSFT_10K_FY2026.pdf",
+    "pdf_page": 40
+   }
+  ]
+ },
+ {
+  "id": "Q46",
+  "type": "multi-hop: across companies",
+  "question": "Compare the effective tax rates of Microsoft and Apple in fiscal year 2026.",
+  "expected": "Microsoft 19%; Apple 17.0%.",
+  "gold": [
+   {
+    "file": "MSFT_10K_FY2026.pdf",
+    "pdf_page": 41
+   },
+   {
+    "file": "AAPL_10K_FY2026.pdf",
+    "pdf_page": 31
+   }
+  ]
+ },
+ {
+  "id": "Q47",
+  "type": "multi-hop: across companies",
+  "question": "Compare Microsoft's and Apple's net income in fiscal year 2026.",
+  "expected": "Microsoft $133,749 million (up 31%); Apple $132,175 million (up about 18% from $112,010 million). Microsoft's was slightly higher.",
+  "gold": [
+   {
+    "file": "MSFT_10K_FY2026.pdf",
+    "pdf_page": 37
+   },
+   {
+    "file": "AAPL_10K_FY2026.pdf",
+    "pdf_page": 35
+   }
+  ]
+ },
+ {
+  "id": "Q48",
+  "type": "multi-hop: across companies",
+  "question": "How much did Microsoft and Apple each spend repurchasing their own shares in fiscal year 2026?",
+  "expected": "Microsoft: $16.7 billion (36 million shares, under its repurchase program); Apple: $85.8 billion.",
+  "gold": [
+   {
+    "file": "MSFT_10K_FY2026.pdf",
+    "pdf_page": 44
+   },
+   {
+    "file": "AAPL_10K_FY2026.pdf",
+    "pdf_page": 31
+   }
+  ]
+ },
+ {
+  "id": "Q49",
+  "type": "multi-hop: across companies",
+  "question": "Which company had higher total revenue in fiscal year 2026, Microsoft or Apple, and by roughly how much?",
+  "expected": "Apple: total net sales $478,834 million; Microsoft: revenue $331,839 million. Apple was higher by about $147.0 billion.",
+  "gold": [
+   {
+    "file": "AAPL_10K_FY2026.pdf",
+    "pdf_page": 28
+   },
+   {
+    "file": "MSFT_10K_FY2026.pdf",
+    "pdf_page": 37
+   }
+  ]
+ },
+ {
+  "id": "Q50",
+  "type": "quant: calculation",
+  "question": "What was Microsoft's operating margin (operating income as a percentage of revenue) in fiscal year 2026?",
+  "expected": "About 46.8% ($155,237 million / $331,839 million).",
+  "gold": [
+   {
+    "file": "MSFT_10K_FY2026.pdf",
+    "pdf_page": 37
+   }
+  ]
+ },
+ {
+  "id": "Q51",
+  "type": "quant: calculation",
+  "question": "What share of Apple's total net sales came from iPhone in fiscal year 2026?",
+  "expected": "About 53.1% ($254,098 million of $478,834 million).",
+  "gold": [
+   {
+    "file": "AAPL_10K_FY2026.pdf",
+    "pdf_page": 29
+   }
+  ]
+ },
+ {
+  "id": "Q52",
+  "type": "quant: calculation",
+  "question": "By what percentage did Apple's net income change from fiscal year 2025 to fiscal year 2026?",
+  "expected": "About +18.0% (from $112,010 million to $132,175 million).",
+  "gold": [
+   {
+    "file": "AAPL_10K_FY2026.pdf",
+    "pdf_page": 35
+   }
+  ]
+ },
+ {
+  "id": "Q53",
+  "type": "quant: calculation",
+  "question": "What share of Microsoft's fiscal year 2026 revenue came from the Intelligent Cloud segment?",
+  "expected": "About 41.5% ($137,791 million of $331,839 million).",
+  "gold": [
+   {
+    "file": "MSFT_10K_FY2026.pdf",
+    "pdf_page": 38
+   }
+  ]
+ },
+ {
+  "id": "Q54",
+  "type": "quant: calculation",
+  "question": "By how many dollars did Microsoft's research and development expense increase from fiscal year 2025 to fiscal year 2026?",
+  "expected": "About $3,074 million ($35,562 million minus $32,488 million), reported as $3.1 billion or 9%.",
+  "gold": [
+   {
+    "file": "MSFT_10K_FY2026.pdf",
+    "pdf_page": 40
+   }
+  ]
+ },
+ {
+  "id": "Q55",
+  "type": "quant: calculation",
+  "question": "By what percentage did Apple's Services gross margin grow from fiscal year 2025 to fiscal year 2026?",
+  "expected": "About 14.1% (from $82,314 million to $93,943 million).",
+  "gold": [
+   {
+    "file": "AAPL_10K_FY2026.pdf",
+    "pdf_page": 30
+   }
+  ]
+ },
+ {
+  "id": "Q56",
+  "type": "should abstain",
+  "question": "What was Amazon's net income in fiscal year 2026?",
+  "expected": "ABSTAIN",
+  "gold": []
+ },
+ {
+  "id": "Q57",
+  "type": "should abstain: forecast",
+  "question": "What will Apple's iPhone net sales be in fiscal year 2027?",
+  "expected": "ABSTAIN",
+  "gold": []
+ },
+ {
+  "id": "Q58",
+  "type": "should abstain: advice",
+  "question": "Is Microsoft stock a good investment right now?",
+  "expected": "ABSTAIN",
+  "gold": []
+ },
+ {
+  "id": "Q59",
+  "type": "should abstain: not in reports",
+  "question": "What was Microsoft's revenue in fiscal year 2019?",
+  "expected": "ABSTAIN",
+  "gold": []
+ },
+ {
+  "id": "Q60",
+  "type": "should abstain: personal data",
+  "question": "What is Tim Cook's home address?",
+  "expected": "ABSTAIN",
+  "gold": []
+ }
+]

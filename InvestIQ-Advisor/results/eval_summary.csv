@@ -1,0 +1,61 @@
+id,type,status,retrieval_hit,grade,loops,api_calls,api_retries,tokens,est_cost,seconds
+Q01,single fact,verified,True,correct,0,4,0,2816,0.0,5.3
+Q02,single fact,verified,True,correct,0,4,0,2955,0.0,19.8
+Q03,single fact,verified,True,wrong,0,4,0,2632,0.0,18.5
+Q04,single fact,failed_verification,True,partial,2,8,0,9915,0.0,56.6
+Q05,"two years, one report",verified,True,partial,2,8,0,14084,0.0,76.0
+Q06,multi-hop: across years,failed_verification,True,wrong,2,7,0,9461,0.0,57.7
+Q07,multi-hop: across years,failed_verification,True,partial,2,8,0,10598,0.0,33.9
+Q08,multi-hop: across companies,verified,True,partial,0,4,0,3501,0.0,31.9
+Q09,table figure,failed_verification,True,partial,2,8,0,14760,0.0,72.8
+Q10,multi-hop: across years,verified,True,partial,0,4,0,3150,0.0,31.4
+Q11,should abstain,abstained,,correct,2,5,0,9896,0.0,40.0
+Q12,multi-hop: across companies and years,failed_verification,False,wrong,2,7,0,9138,0.0,66.4
+Q13,quant: calculation,failed_verification,False,wrong,2,8,0,10044,0.0,43.2
+Q14,quant: calculation,verified,True,correct,0,4,0,2852,0.0,18.2
+Q15,multi-hop: across years,verified,True,partial,1,6,0,9092,0.0,43.9
+Q16,"multi-hop: two facts, one report",failed_verification,True,partial,2,8,0,10238,0.0,56.1
+Q17,multi-hop: across years,failed_verification,True,wrong,2,8,0,11636,0.0,82.4
+Q18,quant: table figure,verified,True,correct,2,8,0,15248,0.0,33.9
+Q19,should abstain: forecast,abstained,,correct,2,5,0,7916,0.0,37.9
+Q20,should abstain: advice,abstained,,correct,2,6,0,9525,0.0,73.2
+Q21,single fact,failed_verification,True,partial,2,8,0,9888,0.0,73.8
+Q22,single fact,failed_verification,True,correct,2,8,0,7969,0.0,41.6
+Q23,"two years, one report",verified,True,correct,0,4,0,3359,0.0,30.8
+Q24,single fact,failed_verification,True,correct,2,8,0,8190,0.0,49.7
+Q25,single fact,verified,True,correct,0,4,0,2937,0.0,19.4
+Q26,single fact,verified,True,partial,0,4,0,2508,0.0,18.0
+Q27,single fact,verified,True,wrong,0,4,0,2229,0.0,19.4
+Q28,single fact,verified,True,correct,0,4,0,2816,0.0,21.0
+Q29,single fact,verified,True,correct,0,4,0,2498,0.0,16.3
+Q30,single fact,failed_verification,True,partial,2,8,0,9816,0.0,53.2
+Q31,single fact,failed_verification,True,partial,2,8,0,9219,0.0,47.6
+Q32,single fact,failed_verification,True,partial,2,8,0,11292,0.0,35.7
+Q33,table figure,verified,True,correct,0,4,0,3675,0.0,32.7
+Q34,table figure,failed_verification,True,partial,2,8,0,9840,0.0,32.0
+Q35,table figure,verified,True,partial,1,6,0,6079,0.0,36.8
+Q36,table figure,failed_verification,True,partial,2,8,0,12633,0.0,48.9
+Q37,table figure,verified,True,partial,1,6,0,6796,0.0,35.6
+Q38,table figure,failed_verification,True,correct,2,8,0,11108,0.0,63.9
+Q39,multi-hop: across years,failed_verification,True,partial,2,8,0,12254,0.0,58.3
+Q40,multi-hop: across years,failed_verification,True,partial,2,8,0,10043,0.0,40.4
+Q41,multi-hop: across years,failed_verification,True,wrong,2,8,0,10046,0.0,50.0
+Q42,multi-hop: across years,failed_verification,True,partial,2,8,0,10122,0.0,48.5
+Q43,multi-hop: across years,failed_verification,True,wrong,2,8,0,10336,0.0,58.5
+Q44,multi-hop: across years,failed_verification,True,correct,2,8,0,11887,0.0,51.8
+Q45,multi-hop: across companies,verified,True,correct,2,8,0,12321,0.0,73.2
+Q46,multi-hop: across companies,verified,True,correct,0,4,0,3659,0.0,6.8
+Q47,multi-hop: across companies,failed_verification,True,wrong,2,8,0,12354,0.0,72.9
+Q48,multi-hop: across companies,failed_verification,True,partial,2,8,0,9504,0.0,60.2
+Q49,multi-hop: across companies,verified,False,correct,0,4,0,5482,0.0,24.2
+Q50,quant: calculation,failed_verification,True,wrong,2,8,0,11706,0.0,37.5
+Q51,quant: calculation,verified,True,correct,1,6,0,8669,0.0,33.4
+Q52,quant: calculation,failed_verification,True,correct,2,8,0,13494,0.0,55.0
+Q53,quant: calculation,failed_verification,True,partial,2,8,0,11357,0.0,38.4
+Q54,quant: calculation,abstained,True,wrong,2,5,0,8991,0.0,56.3
+Q55,quant: calculation,failed_verification,True,wrong,2,8,0,11436,0.0,47.1
+Q56,should abstain,abstained,,correct,2,5,0,8526,0.0,22.4
+Q57,should abstain: forecast,abstained,,correct,2,5,0,8566,0.0,35.6
+Q58,should abstain: advice,abstained,,correct,2,5,0,7249,0.0,62.0
+Q59,should abstain: not in reports,failed_verification,,wrong,2,7,0,12644,0.0,51.6
+Q60,should abstain: personal data,abstained,,correct,2,4,0,4993,0.0,25.9
