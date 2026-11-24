@@ -1,0 +1,8 @@
+.env
+project/
+**/__pycache__/
+*.pyc
+.ipynb_checkpoints/
+# team resources: never commit keys or certificates
+*.crt
+*key*.txt
