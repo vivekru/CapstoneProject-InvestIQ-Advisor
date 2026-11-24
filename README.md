@@ -8,7 +8,7 @@ Capstone project, **Track B (API-side)**, Executive PG Programme in Generative a
 
 ![Python](https://img.shields.io/badge/Python-3.12%2B-3776AB) ![LangGraph](https://img.shields.io/badge/LangGraph-multi--agent-1C3C3C) ![Model](https://img.shields.io/badge/LLM-Qwen3--8B%20(hosted)-6E56CF) ![Tracing](https://img.shields.io/badge/Tracing-OpenTelemetry-F5A800) ![API](https://img.shields.io/badge/API-FastAPI-009688)
 
-**Reports:** [Technical report (PDF, 12 pages)](docs/InvestIQ_Advisor_Technical_Report.pdf) · [Evaluation report (PDF)](docs/InvestIQ_Advisor_Evaluation_Report.pdf) · [Trace dashboard](results/trace_dashboard.html)
+**Reports:** [Technical report (PDF, 12 pages)](InvestIQ-Advisor/docs/InvestIQ_Advisor_Technical_Report.pdf) · [Evaluation report (PDF)](InvestIQ-Advisor/docs/InvestIQ_Advisor_Evaluation_Report.pdf) · [Trace dashboard](InvestIQ-Advisor/results/trace_dashboard.html)
 
 ---
 
@@ -33,7 +33,7 @@ Final run on 24 November 2026: real Qwen3-8B, a frozen 60-question evaluation se
 | Must refuse (8) | 0.88 | **1.00** |
 | Single facts and table figures (22) | **0.66** | 0.61 |
 
-The agents gain most where a single prompt fails (comparisons across companies and calculations) and are slightly worse on single facts, mainly because their verifier rejects some correct answers. Details: [`results/`](results/), the [evaluation report](docs/InvestIQ_Advisor_Evaluation_Report.pdf) and the [technical report](docs/InvestIQ_Advisor_Technical_Report.pdf).
+The agents gain most where a single prompt fails (comparisons across companies and calculations) and are slightly worse on single facts, mainly because their verifier rejects some correct answers. Details: [`InvestIQ-Advisor/results/`](InvestIQ-Advisor/results/), the [evaluation report](InvestIQ-Advisor/docs/InvestIQ_Advisor_Evaluation_Report.pdf) and the [technical report](InvestIQ-Advisor/docs/InvestIQ_Advisor_Technical_Report.pdf).
 
 ---
 
@@ -97,7 +97,7 @@ Every node, tool call and model call emits an **OpenTelemetry** span.
 ## Repository layout
 
 ```
-.
+InvestIQ-Advisor/
 ├── notebooks/InvestIQ_Advisor_v3_22.ipynb   the full system, evaluation and red team (single source of truth)
 ├── app/
 │   ├── investiq_core.py                     the service, generated from the notebook
@@ -110,7 +110,7 @@ Every node, tool call and model call emits an **OpenTelemetry** span.
 │   ├── InvestIQ_Advisor_Technical_Report.pdf  12-page technical report
 │   └── InvestIQ_Advisor_Evaluation_Report.pdf evaluation report with failure taxonomy
 ├── Dockerfile, docker-compose.yml, requirements.txt
-└── README.md                                this file
+└── README.md                                technical notes
 ```
 
 ---
@@ -147,6 +147,7 @@ Every node, tool call and model call emits an **OpenTelemetry** span.
 ### Option B: Docker (web app and API)
 
 ```bash
+cd InvestIQ-Advisor
 mkdir -p project/data project/chat-model project/VM02_Embeddings_Access
 cp data/*.pdf project/data/
 # copy the two endpoint certificates into project/chat-model/ and project/VM02_Embeddings_Access/
@@ -166,6 +167,7 @@ Open <http://localhost:8000> for the web app and <http://localhost:8000/docs> fo
 ### Option C: plain Python
 
 ```bash
+cd InvestIQ-Advisor
 python -m venv .venv && source .venv/bin/activate
 pip install --index-url https://download.pytorch.org/whl/cpu torch
 pip install -r requirements.txt
@@ -189,20 +191,20 @@ If you change the notebook, regenerate the service with
 
 ## Validate the results (without running anything)
 
-Everything the final run produced is in [`results/`](results/):
+Everything the final run produced is in [`InvestIQ-Advisor/results/`](InvestIQ-Advisor/results/):
 
 1. **Open `results/trace_dashboard.html`** in a browser (download it, then double-click). It shows the status mix, the failure taxonomy, where the time goes, and for each query a span waterfall, its agent trail and its citations.
 2. **Recompute the headline numbers** from the raw files:
    ```python
    import pandas as pd
-   a = pd.read_csv("results/eval_agents.csv")
-   b = pd.read_csv("results/eval_summary.csv")
+   a = pd.read_csv("InvestIQ-Advisor/results/eval_agents.csv")
+   b = pd.read_csv("InvestIQ-Advisor/results/eval_summary.csv")
    score = {"correct": 1, "partial": 0.5, "wrong": 0}
    print("Agents:  ", (a.grade == "correct").sum(), "/ 60 correct, accuracy", round(a.grade.map(score).mean(), 3))
    print("Baseline:", (b.grade == "correct").sum(), "/ 60 correct, accuracy", round(b.grade.map(score).mean(), 3))
-   r = pd.read_csv("results/retrieval_recall.csv")
+   r = pd.read_csv("InvestIQ-Advisor/results/retrieval_recall.csv")
    print(r.groupby("method")[["recall@1", "recall@8"]].mean().round(2))
-   print(pd.read_csv("results/redteam_log.csv").result.value_counts())
+   print(pd.read_csv("InvestIQ-Advisor/results/redteam_log.csv").result.value_counts())
    ```
    Expected: agents 35/60 (0.708), baseline 25/60 (0.6), reranked recall@8 0.85, red team 20 PASS.
 3. **Check any answer against the source.** Each agent answer in `results/eval_agents_results.json` lists its claims with file, PDF page and quote; open the PDF in `data/` at that page.
