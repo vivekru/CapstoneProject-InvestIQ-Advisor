@@ -31,7 +31,7 @@ Final run on 24 November 2026: real Qwen3-8B, a frozen 60-question evaluation se
 | Must refuse (8) | 0.88 | **1.00** |
 | Single facts and table figures (22) | **0.66** | 0.61 |
 
-The agents gain most where a single prompt fails (comparisons across companies and calculations) and are slightly worse on single facts, mainly because their verifier rejects some correct answers. Details: [`results/`](results/) and the evaluation report.
+The agents gain most where a single prompt fails (comparisons across companies and calculations) and are slightly worse on single facts, mainly because their verifier rejects some correct answers. Details: [`results/`](results/), the [evaluation report](docs/InvestIQ_Advisor_Evaluation_Report.pdf) and the [technical report](docs/InvestIQ_Advisor_Technical_Report.pdf).
 
 ---
 
@@ -104,7 +104,10 @@ Every node, tool call and model call emits an **OpenTelemetry** span.
 ├── data/                                    the four 10-K PDFs (public SEC filings)
 ├── eval/                                    60 questions with gold answers and gold pages
 ├── results/                                 every output of the final run, incl. trace_dashboard.html
-├── docs/TEAM_SETUP.md                       step-by-step Colab guide for the team
+├── docs/
+│   ├── InvestIQ_Advisor_Technical_Report.pdf  12-page technical report
+│   ├── InvestIQ_Advisor_Evaluation_Report.pdf evaluation report with failure taxonomy
+│   └── TEAM_SETUP.md                        step-by-step Colab guide for the team
 ├── Dockerfile, docker-compose.yml, requirements.txt
 └── README.md                                this file
 ```
