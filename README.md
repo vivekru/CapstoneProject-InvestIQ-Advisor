@@ -8,6 +8,8 @@ Capstone project, **Track B (API-side)**, Executive PG Programme in Generative a
 
 ![Python](https://img.shields.io/badge/Python-3.12%2B-3776AB) ![LangGraph](https://img.shields.io/badge/LangGraph-multi--agent-1C3C3C) ![Model](https://img.shields.io/badge/LLM-Qwen3--8B%20(hosted)-6E56CF) ![Tracing](https://img.shields.io/badge/Tracing-OpenTelemetry-F5A800) ![API](https://img.shields.io/badge/API-FastAPI-009688)
 
+**Reports:** [Technical report (PDF, 12 pages)](docs/InvestIQ_Advisor_Technical_Report.pdf) · [Evaluation report (PDF)](docs/InvestIQ_Advisor_Evaluation_Report.pdf) · [Trace dashboard](results/trace_dashboard.html)
+
 ---
 
 ## Results at a glance
@@ -106,8 +108,7 @@ Every node, tool call and model call emits an **OpenTelemetry** span.
 ├── results/                                 every output of the final run, incl. trace_dashboard.html
 ├── docs/
 │   ├── InvestIQ_Advisor_Technical_Report.pdf  12-page technical report
-│   ├── InvestIQ_Advisor_Evaluation_Report.pdf evaluation report with failure taxonomy
-│   └── TEAM_SETUP.md                        step-by-step Colab guide for the team
+│   └── InvestIQ_Advisor_Evaluation_Report.pdf evaluation report with failure taxonomy
 ├── Dockerfile, docker-compose.yml, requirements.txt
 └── README.md                                this file
 ```
@@ -142,7 +143,6 @@ Every node, tool call and model call emits an **OpenTelemetry** span.
    - Every finished step is checkpointed to Drive; if Colab disconnects, **Run all** again and it continues where it stopped.
 4. **Section 15** starts the web app inside Colab; add `/docs` to its address for the API page.
 
-A detailed walkthrough for teammates is in [`docs/TEAM_SETUP.md`](docs/TEAM_SETUP.md).
 
 ### Option B: Docker (web app and API)
 
@@ -277,6 +277,7 @@ Everything the final run produced is in [`results/`](results/):
 | Accuracy, task completion, tool calls, cost and latency, failure taxonomy, tracing | notebook §12–13c, `results/` |
 | Front end, containerised, rate limiting, caching | notebook §15, `app/`, `Dockerfile` |
 | Prompt-injection, PII, refusals, human-in-the-loop boundary | notebook §13b, `results/redteam_log.csv` |
+| Evaluation report with failure taxonomy; 12-page technical report | `docs/InvestIQ_Advisor_Evaluation_Report.pdf`, `docs/InvestIQ_Advisor_Technical_Report.pdf` |
 
 ---
 
