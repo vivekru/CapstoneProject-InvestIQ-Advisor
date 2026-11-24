@@ -8,7 +8,7 @@ Capstone project, **Track B (API-side)**, Executive PG Programme in Generative a
 
 ![Python](https://img.shields.io/badge/Python-3.12%2B-3776AB) ![LangGraph](https://img.shields.io/badge/LangGraph-multi--agent-1C3C3C) ![Model](https://img.shields.io/badge/LLM-Qwen3--8B%20(hosted)-6E56CF) ![Tracing](https://img.shields.io/badge/Tracing-OpenTelemetry-F5A800) ![API](https://img.shields.io/badge/API-FastAPI-009688)
 
-**Reports:** [Technical report (PDF, 12 pages)](docs/InvestIQ_Advisor_Technical_Report.pdf) · [Evaluation report (PDF)](docs/InvestIQ_Advisor_Evaluation_Report.pdf) · [Trace dashboard](results/trace_dashboard.html)
+**Reports:** [Technical report (PDF, 12 pages)](docs/InvestIQ_Advisor_Technical_Report.pdf) · [Evaluation report (PDF)](docs/InvestIQ_Advisor_Evaluation_Report.pdf) · [Trace dashboard (live)](https://vivekru.github.io/CapstoneProject-InvestIQ-Advisor/InvestIQ-Advisor/results/trace_dashboard.html)
 
 ---
 
@@ -191,7 +191,7 @@ If you change the notebook, regenerate the service with
 
 Everything the final run produced is in [`results/`](results/):
 
-1. **Open `results/trace_dashboard.html`** in a browser (download it, then double-click). It shows the status mix, the failure taxonomy, where the time goes, and for each query a span waterfall, its agent trail and its citations.
+1. **Open the [trace dashboard](https://vivekru.github.io/CapstoneProject-InvestIQ-Advisor/InvestIQ-Advisor/results/trace_dashboard.html)** in a browser (or download `results/trace_dashboard.html` and double-click it; GitHub's file view shows only its source). It shows the status mix, the failure taxonomy, where the time goes, and for each query a span waterfall, its agent trail and its citations.
 2. **Recompute the headline numbers** from the raw files:
    ```python
    import pandas as pd
